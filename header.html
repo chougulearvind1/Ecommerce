@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Header</title>
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />
+  <style>
+    .pad{
+      padding: 15px 30px;
+    }
+    .bt:hover{
+               background-color: blueviolet;
+    }
+
+    .fas.fa-cart-plus {
+        font-size: 29px; 
+        transition: font-size 0.3s ease; /* Transition for smooth effect */
+    }
+
+    .fas.fa-cart-plus:hover {
+        font-size: 35px; /* Increased size on hover */
+    }
+
+    @media (max-width: 576px) {
+        
+       
+        .clr{
+        background-color: white!important;
+      }
+      }
+      .bgcolor{background-color: white;}
+      @media (min-width: 100px) {
+  .navbar-expand .navbar-collapse {
+    display: flex !important;
+  }
+}
+      
+  </style>
+</head>
+<body>
+
+<header class=" row ">
+  <div style="padding:0 0"></div>
+    <div class="pad bg-dark col-12 "><!-- First Part: Logo, Search Box, Cart, Login Button -->
+    <div class="row align-items-center  text-white ">
+      <div class="col-md-auto">
+        <img src="/src/img/supercart-removebg-preview.png" alt="Logo" style="height: 40px;">
+      </div>
+      <div class="col-md">
+        <form class="d-flex">
+          <input    class="form-control " type="search" placeholder="Search" aria-label="Search">
+          <button style="background-color:#e3d242" class="btn btn-outline-light bt" type="submit">Search</button>
+        </form>
+      </div>
+      <div class="col-md-auto">
+        <a href="/cart.html" class="text-decoration-none text-white"aria-label="cart">
+          <i class="fas fa-cart-plus"></i>
+            
+        </a>
+      </div>
+      <div class="col-md-auto">
+        <button type="button"style="background-color:#e3d242" onclick="window.location.href='/Login.html'" class="btn btn-outline-light bt">Login</button>
+      </div>
+    </div>
+  </div>
+    <div class="row   bgcolor"><!-- Second Part: Navigation Bar -->
+        <div class="">
+          <nav class="navbar navbar-expand-lg   navbar-expand-md navbar-expand-sm  navbar-expand">
+            <div class="container-fluid ">
+                <button style="    position: fixed;
+                top: 10px;
+                right: 10px;" class="navbar-toggle  navbar-toggler clr d-block d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                    </button>
+              <div class="collapse navbar-collapse justify-content-center " id="navbarNavDropdown">
+                <ul class="navbar-nav fw-bold clr w-100 justify-content-evenly flex-wrap">
+                  <li class="nav-item px-3">  <!-- Added Navigation Options -->
+                    <a class="nav-link" href="/Homepage.html">Home</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/Product-mf.html">All product</a>
+                  </li>
+                  <li class="nav-item px-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Woman
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                      <li><a class="dropdown-item" href="/woman/product-f.html">All product</a></li>
+                      <li><a class="dropdown-item" href="/woman/Dress.html">Dresses</a></li>
+                      <li><a class="dropdown-item" href="/woman/Pant.html">Pants</a></li>
+                      <li><a class="dropdown-item" href="/woman/Skirts.html">Skirts</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item px-3 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Men
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                      <li><a class="dropdown-item" href="/men/Product-M.html">All product</a></li>
+                      <li><a class="dropdown-item" href="/men/shirts.html">Shirts</a></li>
+                      <li><a class="dropdown-item" href="/men/Pants.html">Pants</a></li>
+                      <li><a class="dropdown-item" href="/men/Hoodies.html">Hoodies</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/kid.html">Kids</a>
+                  </li>
+                  <li class="nav-item px-3">
+                    <a class="nav-link" href="/contact.html">Contact</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html

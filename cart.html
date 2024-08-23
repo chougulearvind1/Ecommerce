@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .quantity-input {
+      width: 70px;
+      text-align: center;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn{
+            background-color:#e3d242 !important;
+            color: black!important;
+            
+
+        }
+  </style>
+</head>
+<body>
+  <header><!-- Header added -->
+
+    <div id="header-container"></div>
+  </header>
+<div style="background-color: #d3d3cf;" class="container"><!--part 1-->
+  <div class="row justify-content-center">
+    <div  class="col-md-8">
+      <h2 style="text-align: center;" >Items in Cart</h2>
+      <div style="border-bottom: 1px solid; width: 90%;margin: auto;" class="row g-3 ">
+  
+        <div style="background-color: #8f8f8d;" class="col-12 ">
+          <div class="row align-items-center">
+            <div class="col-md-2">
+              <img src="https://m.media-amazon.com/images/I/81rVaF3P5GL._AC_CR0%2C0%2C0%2C0_SX960_SY720_.jpg" alt="Item 1" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+              <h5>Net Punjabi Suit Semi Stitched Salwar Suit</h5>
+              <p>Price: ₹995</p>
+            </div>
+            <div class="col-md-3">
+              <div class="input-group col">
+                <button class="btn btn-sm btn-outline-secondary" type="button"><i class="fas fa-minus"></i></button>
+                <input type="text" class="form-control quantity-input input-sm" value="1">
+                <button class="btn btn-sm btn-outline-secondary" type="button"><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+            <div class="col-md-1">
+              <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <div style="background-color: #d3d3cf;" class="col-md-4  "><!--Part 2-->
+      <div class="card">
+        <div class="card-header">
+          Summary
+        </div>
+        <div class="card-body">
+          <p>Total: ₹995</p>
+          <p>Shipping: ₹99</p>
+          <hr>
+          <h5>Total Cost: ₹1094</h5>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary btn-block">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer><!-- Footer ADDED-->
+  <div id="footer-container"></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
